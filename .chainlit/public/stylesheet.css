@@ -1,0 +1,84 @@
+/* --- Global light theme override --- */
+html, body {
+  background-color: #ffffff !important;
+  color: #1E1E1E !important;
+  font-family: Arial, sans-serif !important;
+}
+
+/* --- Header bar --- */
+header {
+  background-color: #2E6DB4 !important; /* UCR blue */
+  color: #ffffff !important;
+}
+header a {
+  color: #FDB515 !important; /* UCR gold */
+  font-weight: 600;
+}
+
+/* --- Buttons --- */
+button, .cl-button-primary {
+  background-color: #2E6DB4 !important;  /* UCR blue */
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  border: none !important;
+}
+button:hover, .cl-button-primary:hover {
+  background-color: #FDB515 !important;  /* UCR gold */
+  color: #1E1E1E !important;
+}
+
+/* --- Chat bubbles --- */
+.cl-message.user {
+  background-color: #FDB515 !important;  /* UCR gold */
+  color: #1E1E1E !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+}
+.cl-message.assistant {
+  background-color: #2E6DB4 !important;  /* UCR blue */
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 10px !important;
+}
+
+/* --- Input area --- */
+textarea, input {
+  background-color: #f9f9f9 !important;
+  color: #1E1E1E !important;
+  border: 1px solid #2E6DB4 !important;
+  border-radius: 8px !important;
+}
+
+/* --- Remove dark/light toggle --- */
+/*
+[data-theme-toggle] {
+  display: none !important;
+}*/
+
+/* UCR-styled dark mode */
+[data-theme="dark"] {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Buttons in dark mode */
+[data-theme="dark"] button,
+[data-theme="dark"] .cl-button-primary {
+  background-color: #2E6DB4 !important;
+  color: #ffffff !important;
+}
+[data-theme="dark"] button:hover,
+[data-theme="dark"] .cl-button-primary:hover {
+  background-color: #FDB515 !important;
+  color: #1E1E1E !important;
+}
+
+/* Chat bubbles in dark mode */
+[data-theme="dark"] .cl-message.user {
+  background-color: #FDB515 !important;
+  color: #1E1E1E !important;
+}
+[data-theme="dark"] .cl-message.assistant {
+  background-color: #2E6DB4 !important;
+  color: #ffffff !important;
+}
